@@ -1,46 +1,17 @@
-<!doctype html>
-<html <?php language_attributes(); ?> class="no-js">
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(); ?></title>
+<?php get_header() ?>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo( 'description' ); ?>">
+<?php while (have_posts()) : the_post(); ?>
 
-		<?php wp_head(); ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<h2>
+			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+		</h2>
 
-	</head>
-	<body <?php body_class(); ?>>
+		<?php the_content(); ?>
 
-		<div class="wrapper">
+		<?php edit_post_link(); ?>
+	</article>
 
-			<header class="header clear" role="banner">
-				<h1><?php bloginfo('name'); ?></h1>
-			</header>
+<?php endwhile; ?>
 
-			<main role="main">
-				<section>
-
-					<?php while (have_posts()) : the_post(); ?>
-
-						<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-							<h2>
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-							</h2>
-					
-							<?php the_content(); ?>
-					
-							<?php edit_post_link(); ?>
-						</article>
-
-					<?php endwhile; ?>
-
-				</section>
-			</main>
-			
-		</div>
-
-		<?php wp_footer(); ?>
-	</body>
-</html>
+<?php get_footer() ?>
