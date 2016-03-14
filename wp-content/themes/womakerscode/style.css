@@ -7,9 +7,182 @@ Description: WoMakersCode blog proposal.
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: dark, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
+Tags: dark, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, 
+custom-menu, featured-images, post-formats, sticky-post, threaded-comments, translation-ready
 Text Domain: womarkerscode
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+body,
+input {
+	color: #333333;
+	font-family: 'Merriweather', serif;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+img {
+	height: auto;
+	width: 100%;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+.header {
+	background: #21262A;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px 10px;
+}
+
+.header h1 {
+	font-size: 1.5em;
+}
+
+.header h1 .wo {
+	color: #C4DB00;
+}
+
+.header h1 .ma {
+	color: #FFA800;
+}
+
+.header h1 .kers {
+	color: #F95600;
+}
+
+.header h1 .code {
+	color: #E00055;
+}
+
+.header	.menu li {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5em;
+	margin: 0 0.5em;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.header	.menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header	.menu .current-menu-item {
+	color: #E00055;
+	font-weight: bold;
+}
+
+.wrapper {
+	margin: 40px 20px;
+}
+
+main {
+	margin-bottom: 40px;
+}
+
+article h2 {
+	margin-bottom: 0.5em;
+}
+
+article h2 a {
+	color: #21262A;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.widget {
+	list-style: none;
+	margin-bottom: 3em;
+}
+
+.widget-title {
+	background: #21262A;
+	color: #FFA800;
+	margin-bottom: 1em;;
+	padding: 0.5em 1em;
+}
+
+.widget-content {
+	padding: 1em;
+}
+
+.searchform input[type^="text"] {
+	margin: 1em 0;
+	width: 100%;
+}
+
+.searchform input[type="submit"] {
+	background: #FFA800;
+	border: 0;
+	color: #21262A;
+	padding: 0.75em;
+}
+
+footer {
+	background: #21262A;
+	padding: 1em;
+	text-align: right;
+}
+
+footer a {
+	color: #C4DB00;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25em;
+	line-height: 2em;
+	text-decoration: none;
+}
+
+footer svg {
+	display: inline-block;
+	margin-right: 0.5em;
+	vertical-align: middle;
+	width: 2em;
+}
+
+footer svg path {
+	fill: #FFA800;
+}
+
+@media (min-width: 700px) {	
+	main {
+		float: left;
+		width: 60%;
+	}
+	
+	.sidebar {
+		float: right;
+		width: 35%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.header {
+		height: 2.5em;
+		line-height: 2.5em;
+	}
+
+	.header	.menu li {
+		display: inline-block;
+		margin: 0 0.5em;
+	}
+	
+	.wrapper {
+		margin-left: auto;
+		margin-right: auto;
+		width: 900px;
+	}
+}

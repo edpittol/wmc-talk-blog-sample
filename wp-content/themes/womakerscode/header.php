@@ -2,7 +2,6 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(); ?></title>
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,16 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+		<header class="header clear" role="banner">
+			<h1><?php echo apply_filters( 'womakerscode_blog_title', get_bloginfo( 'name' ) ); ?></h1>
+			
+			<?php 
+				if( has_nav_menu( 'header-menu' ) ) : 
+					wp_nav_menu( array(
+						'menu' => 'header-menu'
+					) );
+				endif;
+			?>
+		</header>
+
 		<div class="wrapper">
-
-			<header class="header clear" role="banner">
-				<h1><?php bloginfo('name'); ?></h1>
-			</header>
-
-			<main role="main">
-				<section>
