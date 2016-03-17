@@ -1,11 +1,14 @@
 <?php
 
-add_theme_support( 'post-thumbnails' );
-
-add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image',
-'quote', 'status', 'video', 'audio', 'chat' ) );
-
-add_theme_support( 'title-tag' );
+function womarkerscode_after_theme_setup() {
+	add_theme_support( 'post-thumbnails' );
+	
+	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'image',
+		'quote', 'status', 'video', 'audio', 'chat' ) );
+	
+	add_theme_support( 'title-tag' );
+}
+add_action( 'after_theme_setup', 'womarkerscode_after_theme_setup' );
 
 function womakerscode_init() {
   register_nav_menu( 'header-menu', __( 'Header Menu', 'womakerscode' ) );
