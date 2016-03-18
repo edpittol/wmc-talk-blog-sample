@@ -32,13 +32,77 @@ h6 {
 	font-weight: bold;
 }
 
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+h5 {
+	font-size: 1.4em;
+}
+
+h6 {
+	font-size: 1.2em;
+}
+
 img {
 	height: auto;
-	width: 100%;
+	max-width: 100%;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol,
+ul {
+	padding-left: 40px;
+}
+
+li {
+	margin: 5px 0;
+	padding-left: 20px;
 }
 
 p {
 	line-height: 1.5em;
+	margin: 15px 0;
+}
+
+a {
+	color: #E00055;
+}
+
+a:hover {
+	color: #FFA800;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 0.8em;
+	margin-left: 50px;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 0.8em;
+}
+
+table td,
+table th {
+	border: 1px solid #FFA800;
+	padding: 5px;
 }
 
 .clearfix {
@@ -53,7 +117,6 @@ p {
 }
 
 .header h1 {
-	font-size: 1.5em;
 }
 
 .header h1 .wo {
@@ -98,14 +161,25 @@ main {
 	margin-bottom: 40px;
 }
 
-article h2 {
-	margin-bottom: 0.5em;
-}
-
 article h2 a {
 	color: #21262A;
-	font-size: 2em;
 	text-decoration: none;
+}
+
+article .wp-caption {
+	background: #C4DB00;
+	max-width: 100%;
+}
+
+article .wp-caption img {
+	display: block;
+	width: 100%;
+}
+
+article .wp-caption-text {
+	color: #F95600;
+	margin: 0;
+	padding: 10px;
 }
 
 .widget {
