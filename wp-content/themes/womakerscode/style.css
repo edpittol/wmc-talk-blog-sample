@@ -190,7 +190,8 @@ article .wp-caption-text {
 .widget-title {
 	background: #21262A;
 	color: #FFA800;
-	margin-bottom: 1em;;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
 	padding: 0.5em 1em;
 }
 
