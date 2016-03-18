@@ -217,6 +217,10 @@ article .wp-caption-text {
 	border-bottom: 1px solid #FFA800;
 }
 
+.page-template-no-sidebar main {
+	width: 100%;
+}
+
 .post-categories {
 	list-style: none;
 	padding: 0;
