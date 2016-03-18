@@ -214,6 +214,17 @@ article .wp-caption-text {
 
 .entry-title {
 	margin-bottom: 40px;
+	border-bottom: 1px solid #FFA800;
+}
+
+.post-categories {
+	list-style: none;
+	padding: 0;
+}
+
+.post-categories li {
+	display: inline;
+	padding: 0;
 }
 
 .pagination h2 {
