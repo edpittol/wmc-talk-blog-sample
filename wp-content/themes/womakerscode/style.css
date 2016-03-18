@@ -30,6 +30,7 @@ h5,
 h6 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
+	margin: 0.8em 0;
 }
 
 h1 {
@@ -117,6 +118,7 @@ table th {
 }
 
 .header h1 {
+	margin: 0;
 }
 
 .header h1 .wo {
@@ -161,6 +163,10 @@ main {
 	margin-bottom: 40px;
 }
 
+article {
+	margin-bottom: 60px;
+}
+
 article h2 a {
 	color: #21262A;
 	text-decoration: none;
@@ -180,6 +186,23 @@ article .wp-caption-text {
 	color: #F95600;
 	margin: 0;
 	padding: 10px;
+}
+
+.entry-title {
+	margin-bottom: 40px;
+}
+
+.pagination h2 {
+	border-top: 3px solid #FFA800;
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	padding-top: 10px;
+}
+
+.pagination .page-numbers {
+	display: inline-block;
+	margin-right: 20px;
 }
 
 .widget {

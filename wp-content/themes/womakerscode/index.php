@@ -6,7 +6,7 @@
 		<?php while (have_posts()) : the_post(); ?>
 		
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<h2>
+				<h2 class="entry-title">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>
 				
@@ -15,8 +15,8 @@
 						the_post_thumbnail( 'full' );
 					endif;
 				?>
-		
-				<?php the_content(); ?>
+				
+				<div class="entry-content"><?php the_content(); ?></div>
 		
 				<?php edit_post_link(); ?>
 			</article>
