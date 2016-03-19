@@ -145,6 +145,10 @@ table th {
 	margin: 0;
 }
 
+.header h1 a {
+	text-decoration: none;
+}
+
 .header h1 .wo {
 	color: #C4DB00;
 }
